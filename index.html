@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteTech Computers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 35px;
+            text-align: center;
+        }
+
+        .product-img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .offer {
+            background-color: #fff3cd;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ByteTech</a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offers">Special Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="home">
+        <h1>ByteTech Computers</h1>
+        <p>Your Trusted Computer Store</p>
+    </header>
+    <section class="container text-center my-5">
+        <h2>Welcome to ByteTech Computers</h2>
+        <p class="mt-3"> Welcome to ByteTech Computers! Visit us to find the best technology for your needs.</p>
+        <button class="btn btn-primary mt-2" onclick="document.getElementById('products').scrollIntoView()">Explore Products
+        </button>
+    </section>
+
+    <section class="container my-5" id="products">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/images/Laptop.jpg" class="card-img-top product-img" alt="Laptop">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Laptops</h5>
+                        <p class="card-text">Explore our collection of modern laptops for education, work and entertainment.</p>
+                        <a href="#contact" class="btn btn-primary"> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+
+                    <img src="/images/Desktop.jpg" class="card-img-top product-img" 
+                         alt="Desktop Computer">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Desktop Computers</h5>
+                        <p class="card-text">Powerful desktop computers for gaming, office work and everyday use.</p>
+                        <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/images/mouse.jpg" class="card-img-top product-img"
+                         alt="Computer Accessories">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Accessories</h5>
+                        <p class="card-text">Find keyboards, mice, headphones and other useful computer accessories.</p>
+                        <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer my-5" id="offers">
+        <div class="container">
+            <h2>Special Weekend Offer!</h2>
+            <h3 class="text-danger mt-3">Get 15% OFF</h3>
+            <p>Enjoy a special 15% discount on selected computer accessories this weekend.</p>
+            <a href="#contact" class="btn btn-danger">Get This Offer</a>
+        </div>
+    </section>
+
+    <section class="container my-5" id="contact">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <h5>ByteTech Computers</h5>
+                        <p>Address: Main Street, Colombo, Sri Lanka</p>
+                        <p>Telephone: +94 72 123 4567</p>
+                        <p>Email: bytetech@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="mb-0">&copy; 2026 ByteTech Computers. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
